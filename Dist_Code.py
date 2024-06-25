@@ -1,7 +1,8 @@
 import requests
 import json
-import pyttsx3
+from gtts import gTTS
 import streamlit as st
+import os
 
 def get_weather(city):
     api_key = "fc0e8e2302014754a7872400242504"
@@ -16,9 +17,9 @@ def get_weather(city):
         return None
 
 def speak_weather(city, temperature):
-    engine = pyttsx3.init()
-    engine.say(f'The weather in {city} is {temperature} degree Celsius')
-    engine.runAndWait()
+    tts = gTTS(text=f'The weather in {city} is {temperature} degree Celsius', lang='en')
+    tts.save("weather.mp3")
+    os.system("mpg321 weather.mp3")
 
 st.title("Weather Speaker")
 st.write("Welcome to RoboSpeaker 2.1. Created by Gagan Sharma")
