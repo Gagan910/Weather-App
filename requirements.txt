@@ -1,4 +1,3 @@
 requests
-pyttsx3
 streamlit
-
+gtts
