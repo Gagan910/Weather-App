@@ -1,8 +1,10 @@
 # Weather-app
+
 # RoboSpeaker 2.1
+RoboSpeaker is a simple Python script that fetches current weather information for a specified city and speaks out the temperature using text-to-speech synthesis.
+
 # App Link
 https://weather-app-bsj8yxzzungsmsxdzsrhmn.streamlit.app/
-RoboSpeaker is a simple Python script that fetches current weather information for a specified city and speaks out the temperature using text-to-speech synthesis.
 
 ## Features
 
@@ -14,22 +16,17 @@ RoboSpeaker is a simple Python script that fetches current weather information f
 
 1. Clone the repository:
 
-    
     git clone https://github.com/<your-username>/RoboSpeaker.git
   
-
 2. Install the required libraries:
 
-   
     pip install requests pyttsx3
    
-
 ## Usage
 
 1. Run the script:
 
     python main.py
-
 
 2. Enter the name of the city when prompted.
 
